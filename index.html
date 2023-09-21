@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Enlaces a Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <title>Don Bigotes - Asadero de Pollos</title>
+</head>
+<body>
+    <header>
+        <h1>Asadero Don Bigotes</h1>
+        <img src="logo.png" alt="Logo de Don Bigotes" width="200" height="200">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#pollo-asado">Pollo Asado</a></li>
+            <li><a href="#pollo-broaster">Pollo Broaster</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+        </ul>
+    </nav>
+    <section id="pollo-asado">
+        <h2>Pollo Asado</h2>
+        <div class="slider">
+            <img src="asado1.png" alt="Imagen 1" width="200" height="170">
+            <img src="asado2.png" alt="Imagen 2" width="200" height="200">
+            <img src="asado3.png" alt="Imagen 3" width="190" height="170">
+        </div>
+        <p>¡Disfruta de nuestro delicioso pollo asado!</p>
+        <p>Pollo completo : 37.000$</p>
+        <p>Medio pollo : 20.000$</p>
+        <p>Cuarto de pollo: 11.000$</p>
+        <button class="order-button" onclick="showContactInfo('pollo-asado-info')">¡Ordénalo Ahora!</button>
+        <div id="pollo-asado-info" class="contact-info" style="display: none;">
+            <p>Correo Electrónico: donbigotes2022@gmail.com</p>
+            <p>Dirección: Cra 4 # 14-76 Barrio Santa Lucía, Toledo Norte de Santander</p>
+            <p>Teléfono: 3108745575</p>
+        </div>
+    </section>
+    <!-- Repite este patrón para los otros productos -->
+    <section id="pollo-broaster">
+        <h2>Pollo Broaster</h2>
+        <div class="slider">
+            <img src="pollob1.png" alt="Imagen 4" width="200" height="200">
+            <img src="pollob2.png" alt="Imagen 5" width="200" height="200">
+            <img src="pollob3.png" alt="Imagen 6" width="200" height="150">
+        </div>
+        <p>Prueba nuestro crujiente pollo broaster.</p>
+        <p>Pollo completo : 37.000$</p>
+        <p>Medio pollo : 20.000$</p>
+        <p>Cuarto de pollo: 11.000$</p>
+        <button class="order-button" onclick="showContactInfo('pollo-broaster-info')">¡Ordénalo Ahora!</button>
+        <div id="pollo-broaster-info" class="contact-info" style="display: none;">
+            <p>Correo Electrónico: donbigotes2022@gmail.com</p>
+            <p>Dirección: Cra 4 # 14-76 Barrio Santa Lucía, Toledo Norte de Santander</p>
+            <p>Teléfono: 3108745575</p>
+        </div>
+    </section>
+    <section id="bebidas">
+        <h2>Bebidas</h2>
+        <div class="slider">
+            <img src="gas1.png" alt="Imagen 7" width="80" height="200">
+            <img src="gas2.png" alt="Imagen 8" width="100" height="200">
+            <img src="gas3.png" alt="Imagen 9" width="200" height="200">
+        </div>
+        <p>Acompaña tu comida con nuestras refrescantes bebidas.</p>
+        <p>Precio: $2.99</p>
+        <button class="order-button" onclick="showContactInfo('bebidas-info')">¡Ordénalas Ahora!</button>
+        <div id="bebidas-info" class="contact-info" style="display: none;">
+            <p>Correo Electrónico: donbigotes2022@gmail.com</p>
+            <p>Dirección: Cra 4 # 14-76 Barrio Santa Lucía, Toledo Norte de Santander</p>
+            <p>Teléfono: 3108745575</p>
+        </div>
+    </section>
+    <footer>
+        <p>Contacto: <a href="tel:1234567890">Llámanos al: 3108745575</a></p>
+    </footer>
+    <!-- Enlace al archivo JavaScript de Slick Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Tu archivo JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
+
